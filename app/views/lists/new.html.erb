@@ -1,0 +1,9 @@
+<h1>Add a new list</h1>
+
+<%= form_with model: @list, local: true do |element| %>
+  <%= element.label :name %>
+  <%= element.text_field :name %>
+  <%= element.submit%>
+<% end %>
+
+<%= link_to "back to lists", lists_path %>
